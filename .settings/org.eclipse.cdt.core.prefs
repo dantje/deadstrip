@@ -1,0 +1,3 @@
+#Fri Jun 05 01:12:22 CEST 2009
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.mingw.exe.release.900400866=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<environment append\="true" appendContributed\="true">\r\n<variable delimiter\=";" name\="MINGW_HOME" operation\="append" value\="C\:\\Sprachen\\MinGW\\bin"/>\r\n</environment>\r\n
