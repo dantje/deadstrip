@@ -295,7 +295,7 @@ void hashmapProcess(const hashmap* map, fHashmapProc proc)
 {
 	hashmapEntry* array;
 	size_t size;
-	int i;
+	unsigned int i;
 	
 	assert(map);
 	
