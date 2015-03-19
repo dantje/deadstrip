@@ -1,6 +1,6 @@
 
 all:
-	gcc -Wall -Wextra -ggdb -o deadstrip *.c
+	gcc -Wall -Wextra -ggdb -o deadstrip src/*.c
 
 doxygen:
 	doxygen
