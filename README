@@ -1,0 +1,7 @@
+
+  deadstrip  
+  a dependency analysis and dead function/data removal tool 
+
+  Based on Version 1.1 of DeadStrip_src.zip 
+  sha1sum f03cd50ec07aab8f0ecebb245e2dce6b86396c45
+  https://www2.informatik.hu-berlin.de/~weber/deadstrip/
