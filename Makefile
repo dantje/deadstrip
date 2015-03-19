@@ -4,3 +4,6 @@ all:
 
 doxygen:
 	doxygen
+
+clean:
+	rm -rf docs deadstrip
