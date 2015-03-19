@@ -1,0 +1,51 @@
+<USED>
+	<FILE name="obj\Test.build\Release\hashmap.o">
+		<SECTION>.text$hashmapGet</SECTION>
+		<SECTION>.text$hashmapDelete</SECTION>
+		<SECTION>.text$findPrimeGreaterThan</SECTION>
+		<SECTION>.text$rehash</SECTION>
+		<SECTION>.text$hashmapInsert</SECTION>
+		<SECTION>.text$hashmapCreate</SECTION>
+	</FILE>
+	<FILE name="obj\Test.build\Release\list.o">
+		<SECTION>.text$listGet</SECTION>
+		<SECTION>.text$listNext</SECTION>
+		<SECTION>.text$listStart</SECTION>
+		<SECTION>.text$listIsEmpty</SECTION>
+		<SECTION>.text$listRemove</SECTION>
+		<SECTION>.text$listDelete</SECTION>
+		<SECTION>.text$listAdd</SECTION>
+		<SECTION>.text$listCreate</SECTION>
+	</FILE>
+	<FILE name="obj\Test.build\Release\main.o">
+		<SECTION>.text$main</SECTION>
+		<SECTION>.rdata$hlp</SECTION>
+	</FILE>
+	<FILE name="obj\Test.build\Release\objectFile.o">
+		<SECTION>.text$key</SECTION>
+		<SECTION>.text$objectFileGetName</SECTION>
+		<SECTION>.text$objectFileDumpMap</SECTION>
+		<SECTION>.text$objectFileGetUnused</SECTION>
+		<SECTION>.text$objectFileDumpUnused</SECTION>
+		<SECTION>.text$objectFileGetUsed</SECTION>
+		<SECTION>.text$objectFileDumpUsed</SECTION>
+		<SECTION>.text$colorizeGraph</SECTION>
+		<SECTION>.text$objectFileColorize</SECTION>
+		<SECTION>.text$trim</SECTION>
+		<SECTION>.text$objectFileCompute</SECTION>
+		<SECTION>.text$objectFileCollect</SECTION>
+		<SECTION>.text$objectFileCreate</SECTION>
+		<SECTION>.data$sectionMap</SECTION>
+		<SECTION>.data$unknownSection</SECTION>
+		<SECTION>.rdata$prefix</SECTION>
+		<SECTION>.data$buffer.3186</SECTION>
+	</FILE>
+	<FILE name="obj\Test.build\Release\graph.o">
+		<SECTION>.text$graphColorNode</SECTION>
+		<SECTION>.text$graphGetColorNode</SECTION>
+		<SECTION>.text$graphGetNameNode</SECTION>
+		<SECTION>.text$graphGetConnections</SECTION>
+		<SECTION>.text$graphConnect</SECTION>
+		<SECTION>.text$graphCreate</SECTION>
+	</FILE>
+</USED>

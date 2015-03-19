@@ -1,0 +1,2 @@
+COMMAND LINE:
+deadstrip -L\lib\gcc\mingw32\4.2.1-sjlj -L\lib -o build\Release\slipOff.exe obj\Test.build\Release\hashmap.o obj\Test.build\Release\list.o obj\Test.build\Release\main.o obj\Test.build\Release\objectFile.o obj\Test.build\Release\graph.o -s --linker mingw32-g++-sjlj.exe --dcmd --ddis --duse --dmap

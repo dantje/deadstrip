@@ -1,0 +1,16 @@
+<UNUSED>
+	<FILE name="obj\Test.build\Release\hashmap.o">
+		<SECTION>.text$hashmapRemove</SECTION>
+		<SECTION>.text$hashmapCount</SECTION>
+	</FILE>
+	<FILE name="obj\Test.build\Release\list.o">
+		<SECTION>.text$listCount</SECTION>
+	</FILE>
+	<FILE name="obj\Test.build\Release\main.o">
+	</FILE>
+	<FILE name="obj\Test.build\Release\objectFile.o">
+	</FILE>
+	<FILE name="obj\Test.build\Release\graph.o">
+		<SECTION>.text$graphNameNode</SECTION>
+	</FILE>
+</UNUSED>

@@ -1,0 +1,190 @@
+<MAP>
+	<FILE name="obj\Test.build\Release\hashmap.o">
+		<SECTION name=".text$hashmapRemove" color=0>
+		</SECTION>
+		<SECTION name=".text$hashmapGet" color=1>
+		</SECTION>
+		<SECTION name=".text$hashmapCount" color=0>
+		</SECTION>
+		<SECTION name=".text$hashmapDelete" color=1>
+		</SECTION>
+		<SECTION name=".text$findPrimeGreaterThan" color=1>
+		</SECTION>
+		<SECTION name=".text$rehash" color=1>
+			<DEPENDS>.text$findPrimeGreaterThan</DEPENDS>
+			<DEPENDS>.text$hashmapInsert</DEPENDS>
+		</SECTION>
+		<SECTION name=".text$hashmapInsert" color=1>
+			<DEPENDS>.text$rehash</DEPENDS>
+		</SECTION>
+		<SECTION name=".text$hashmapCreate" color=1>
+			<DEPENDS>.text$findPrimeGreaterThan</DEPENDS>
+		</SECTION>
+	</FILE>
+	<FILE name="obj\Test.build\Release\list.o">
+		<SECTION name=".text$listGet" color=1>
+		</SECTION>
+		<SECTION name=".text$listNext" color=1>
+		</SECTION>
+		<SECTION name=".text$listStart" color=1>
+		</SECTION>
+		<SECTION name=".text$listCount" color=0>
+		</SECTION>
+		<SECTION name=".text$listIsEmpty" color=1>
+		</SECTION>
+		<SECTION name=".text$listRemove" color=1>
+		</SECTION>
+		<SECTION name=".text$listDelete" color=1>
+		</SECTION>
+		<SECTION name=".text$listAdd" color=1>
+		</SECTION>
+		<SECTION name=".text$listCreate" color=1>
+		</SECTION>
+	</FILE>
+	<FILE name="obj\Test.build\Release\main.o">
+		<SECTION name=".text$main" color=1>
+			<DEPENDS>.text$listCreate</DEPENDS>
+			<DEPENDS>.text$listAdd</DEPENDS>
+			<DEPENDS>.text$objectFileCreate</DEPENDS>
+			<DEPENDS>.rdata$hlp</DEPENDS>
+			<DEPENDS>.text$listStart</DEPENDS>
+			<DEPENDS>.text$listNext</DEPENDS>
+			<DEPENDS>.text$listGet</DEPENDS>
+			<DEPENDS>.text$objectFileGetName</DEPENDS>
+			<DEPENDS>.text$listRemove</DEPENDS>
+			<DEPENDS>.text$listIsEmpty</DEPENDS>
+			<DEPENDS>.text$objectFileCollect</DEPENDS>
+			<DEPENDS>.text$objectFileCompute</DEPENDS>
+			<DEPENDS>.text$objectFileColorize</DEPENDS>
+			<DEPENDS>.text$objectFileGetUnused</DEPENDS>
+			<DEPENDS>.text$objectFileDumpMap</DEPENDS>
+			<DEPENDS>.text$objectFileDumpUsed</DEPENDS>
+			<DEPENDS>.text$objectFileDumpUnused</DEPENDS>
+			<DEPENDS>.text$listDelete</DEPENDS>
+		</SECTION>
+		<SECTION name=".rdata$hlp" color=1>
+		</SECTION>
+	</FILE>
+	<FILE name="obj\Test.build\Release\objectFile.o">
+		<SECTION name=".text$key" color=1>
+		</SECTION>
+		<SECTION name=".text$objectFileGetName" color=1>
+		</SECTION>
+		<SECTION name=".text$objectFileDumpMap" color=1>
+			<DEPENDS>.text$listStart</DEPENDS>
+			<DEPENDS>.text$listGet</DEPENDS>
+			<DEPENDS>.text$graphGetConnections</DEPENDS>
+			<DEPENDS>.text$graphGetColorNode</DEPENDS>
+			<DEPENDS>.text$graphGetNameNode</DEPENDS>
+			<DEPENDS>.text$listNext</DEPENDS>
+		</SECTION>
+		<SECTION name=".text$objectFileGetUnused" color=1>
+			<DEPENDS>.text$listCreate</DEPENDS>
+			<DEPENDS>.text$listStart</DEPENDS>
+			<DEPENDS>.text$listGet</DEPENDS>
+			<DEPENDS>.text$graphGetColorNode</DEPENDS>
+			<DEPENDS>.text$graphGetNameNode</DEPENDS>
+			<DEPENDS>.text$listAdd</DEPENDS>
+			<DEPENDS>.text$listNext</DEPENDS>
+		</SECTION>
+		<SECTION name=".text$objectFileDumpUnused" color=1>
+			<DEPENDS>.text$listStart</DEPENDS>
+			<DEPENDS>.text$listGet</DEPENDS>
+			<DEPENDS>.text$objectFileGetUnused</DEPENDS>
+			<DEPENDS>.text$listNext</DEPENDS>
+			<DEPENDS>.text$listDelete</DEPENDS>
+		</SECTION>
+		<SECTION name=".text$objectFileGetUsed" color=1>
+			<DEPENDS>.text$listCreate</DEPENDS>
+			<DEPENDS>.text$listStart</DEPENDS>
+			<DEPENDS>.text$listGet</DEPENDS>
+			<DEPENDS>.text$graphGetColorNode</DEPENDS>
+			<DEPENDS>.text$graphGetNameNode</DEPENDS>
+			<DEPENDS>.text$listAdd</DEPENDS>
+			<DEPENDS>.text$listNext</DEPENDS>
+		</SECTION>
+		<SECTION name=".text$objectFileDumpUsed" color=1>
+			<DEPENDS>.text$listStart</DEPENDS>
+			<DEPENDS>.text$listGet</DEPENDS>
+			<DEPENDS>.text$objectFileGetUsed</DEPENDS>
+			<DEPENDS>.text$listNext</DEPENDS>
+			<DEPENDS>.text$listDelete</DEPENDS>
+		</SECTION>
+		<SECTION name=".text$colorizeGraph" color=1>
+			<DEPENDS>.text$graphGetColorNode</DEPENDS>
+			<DEPENDS>.text$graphGetConnections</DEPENDS>
+			<DEPENDS>.text$graphColorNode</DEPENDS>
+			<DEPENDS>.text$listIsEmpty</DEPENDS>
+			<DEPENDS>.text$listStart</DEPENDS>
+			<DEPENDS>.text$listGet</DEPENDS>
+			<DEPENDS>.text$listNext</DEPENDS>
+		</SECTION>
+		<SECTION name=".text$objectFileColorize" color=1>
+			<DEPENDS>.text$key</DEPENDS>
+			<DEPENDS>.data$sectionMap</DEPENDS>
+			<DEPENDS>.text$hashmapGet</DEPENDS>
+			<DEPENDS>.text$colorizeGraph</DEPENDS>
+		</SECTION>
+		<SECTION name=".text$trim" color=1>
+		</SECTION>
+		<SECTION name=".text$objectFileCompute" color=1>
+			<DEPENDS>.data$sectionMap</DEPENDS>
+			<DEPENDS>.text$hashmapDelete</DEPENDS>
+			<DEPENDS>.data$unknownSection</DEPENDS>
+			<DEPENDS>.text$listDelete</DEPENDS>
+			<DEPENDS>.text$hashmapCreate</DEPENDS>
+			<DEPENDS>.text$listCreate</DEPENDS>
+			<DEPENDS>.text$listStart</DEPENDS>
+			<DEPENDS>.text$listGet</DEPENDS>
+			<DEPENDS>.text$graphGetNameNode</DEPENDS>
+			<DEPENDS>.rdata$prefix</DEPENDS>
+			<DEPENDS>.text$key</DEPENDS>
+			<DEPENDS>.text$hashmapInsert</DEPENDS>
+			<DEPENDS>.text$listNext</DEPENDS>
+			<DEPENDS>.text$trim</DEPENDS>
+			<DEPENDS>.text$hashmapGet</DEPENDS>
+			<DEPENDS>.data$buffer.3186</DEPENDS>
+			<DEPENDS>.text$graphConnect</DEPENDS>
+			<DEPENDS>.text$listAdd</DEPENDS>
+			<DEPENDS>.text$colorizeGraph</DEPENDS>
+		</SECTION>
+		<SECTION name=".text$objectFileCollect" color=1>
+			<DEPENDS>.text$trim</DEPENDS>
+			<DEPENDS>.rdata$prefix</DEPENDS>
+			<DEPENDS>.text$graphCreate</DEPENDS>
+			<DEPENDS>.text$listAdd</DEPENDS>
+		</SECTION>
+		<SECTION name=".text$objectFileCreate" color=1>
+			<DEPENDS>.text$listCreate</DEPENDS>
+		</SECTION>
+		<SECTION name=".data$sectionMap" color=1>
+		</SECTION>
+		<SECTION name=".data$unknownSection" color=1>
+		</SECTION>
+		<SECTION name=".rdata$prefix" color=1>
+		</SECTION>
+		<SECTION name=".data$buffer.3186" color=1>
+		</SECTION>
+	</FILE>
+	<FILE name="obj\Test.build\Release\graph.o">
+		<SECTION name=".text$graphColorNode" color=1>
+		</SECTION>
+		<SECTION name=".text$graphNameNode" color=0>
+		</SECTION>
+		<SECTION name=".text$graphGetColorNode" color=1>
+		</SECTION>
+		<SECTION name=".text$graphGetNameNode" color=1>
+		</SECTION>
+		<SECTION name=".text$graphGetConnections" color=1>
+		</SECTION>
+		<SECTION name=".text$graphConnect" color=1>
+			<DEPENDS>.text$listStart</DEPENDS>
+			<DEPENDS>.text$listGet</DEPENDS>
+			<DEPENDS>.text$listNext</DEPENDS>
+			<DEPENDS>.text$listAdd</DEPENDS>
+		</SECTION>
+		<SECTION name=".text$graphCreate" color=1>
+			<DEPENDS>.text$listCreate</DEPENDS>
+		</SECTION>
+	</FILE>
+</MAP>
