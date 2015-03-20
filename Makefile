@@ -8,7 +8,7 @@ TARGET=deadstrip
 all: $(SOURCES) $(TARGET)
 
 clean:
-	rm -rf $(TARGET) $(OBJECTS) docs/html
+	rm -rf $(TARGET) $(OBJECTS)
 
 doxygen:
 	doxygen docs/Doxyfile
