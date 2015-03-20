@@ -170,7 +170,7 @@ int main(int argc, const char* argv[])
 	largs[li] = 0;
 	
 	if (flags & SO_HELP)
-		printf(hlp);
+		puts(hlp);
 	
 	
 	/* perform analysis */
@@ -309,7 +309,7 @@ int main(int argc, const char* argv[])
 		}
 	}
 	else if (!(flags & SO_HELP))
-		printf(hlp);
+		puts(hlp);
 	
 	
 	/* dump command line */
