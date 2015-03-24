@@ -21,11 +21,11 @@
 #include "objectFile.h"
 
 /* modify those, if you're migrating onto a new system */
-#define SO_LINKER   "ld"         /**<@brief The default linker. */
-#define SO_DUMPER   "objdump"    /**<@brief The object file dumper. */
+#define SO_LINKER   "i686-w64-mingw32-ld"         /**<@brief The default linker. */
+#define SO_DUMPER   "i686-w64-mingw32-objdump"    /**<@brief The object file dumper. */
 #define SO_DPARAM   "-rh"        /**<@brief Parameters for the dumper. */
 #define SO_DFILE    ".-"         /**<@brief Temporary file for the dumper. */
-#define SO_REMOVER  "objcopy"    /**<@brief Object copy tool. */
+#define SO_REMOVER  "i686-w64-mingw32-objcopy"    /**<@brief Object copy tool. */
 #define SO_RRMV     "-R"         /**<@brief Parameter to remove sections. */
 #define SO_PIPE     ">"          /**<@brief Pipe symbol. */
 
