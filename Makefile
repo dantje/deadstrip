@@ -8,7 +8,7 @@ TARGET=deadstrip
 all: $(SOURCES) $(TARGET)
 
 clean:
-	rm -rf $(TARGET) $(OBJECTS)
+	rm -rf $(TARGET) $(OBJECTS) test 
 
 doxygen:
 	doxygen docs/Doxyfile
@@ -20,5 +20,5 @@ $(TARGET): $(OBJECTS)
 	$(CC) $(CFLAGS) $< -o $@
 
 dogfood:
-	cd test && i686-w64-mingw32-gcc $(CFLAGS) ../src/*.c
+	mkdir test && cd test && i686-w64-mingw32-gcc $(CFLAGS) ../src/*.c
 	./deadstrip --dmap --ddis --duse -o test/deadstrip test/*.o -lmingw32 -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32
