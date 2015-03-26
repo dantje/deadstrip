@@ -438,7 +438,7 @@ void objectFileDumpMap(list* oFiles)
 			graph* sect = (graph*) hashmapGet(sectionMap, name);
 			list* depend = graphGetConnections(sect);
 			
-			printf("\t\t<SECTION name=\"%s\" color=%lu>\n",
+			printf("\t\t<SECTION name=\"%s\" color=\"%lu\">\n",
 			       (char*) graphGetNameNode(sect), graphGetColorNode(sect));
 			fflush(stdout);
 			
