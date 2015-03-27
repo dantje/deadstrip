@@ -4,7 +4,8 @@ deadstrip
 
 A dependency analysis and dead function/data removal tool.
 
-A i686-w64-mingw32 toolchain is required.
+A i686-w64-mingw32 toolchain is required. 
+python and graphviz for graph generation.
 
 Build deadstrip and use it on itself:
 
