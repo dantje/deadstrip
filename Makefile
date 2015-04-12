@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-c -Wall -ffunction-sections -fdata-sections -Wextra
+CFLAGS=-c -Wall -Wextra -ffunction-sections -fdata-sections -Wextra
 LDFLAGS=
 SOURCES=src/main.c src/graph.c src/hashmap.c src/list.c src/objectFile.c
 OBJECTS=$(SOURCES:.c=.o)
